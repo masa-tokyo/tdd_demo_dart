@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:tdd_demo/main.dart';
 
 //--------------------------------------------------
 // 記述順番：１
@@ -34,7 +35,7 @@ void main() {
         'email': 'john@example.com'
       };
 
-      UserApiResponse response = UserApiResponse(apiResponseJson);
+      final response = UserApiResponse(apiResponseJson);
       UserResponseTranslator translator = UserResponseTranslator();
       User user = translator.translate(response);
 

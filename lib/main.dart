@@ -123,3 +123,48 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+/// ドメインモデル。
+class User {
+  final String name;
+  final int age;
+  final String email;
+
+  User(this.name, this.age, this.email) {
+    if (name.isEmpty) {
+      throw ArgumentError('name は 1文字以上');
+    }
+    if (age < 0) {
+      throw ArgumentError('age は 0以上');
+    }
+    if (email.isEmpty) {
+      throw ArgumentError('email は 1文字以上');
+    }
+  }
+}
+
+/// 疑似API レスポンス。
+class UserApiResponse {
+  final String name;
+  final int age;
+  final String email;
+
+  UserApiResponse(Map<String, dynamic> json)
+      : name = '',
+        age = 0,
+        email = '' {
+    throw UnimplementedError();
+  }
+}
+
+/// APIレスポンスからドメインモデルに変換するトランスレーター。
+abstract interface class DataTranslator<TSource, TTarget> {
+  TTarget translate(TSource source);
+}
+
+class UserResponseTranslator implements DataTranslator<UserApiResponse, User> {
+  @override
+  User translate(UserApiResponse source) {
+    throw UnimplementedError();
+  }
+}
