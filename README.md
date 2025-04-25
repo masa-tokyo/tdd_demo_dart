@@ -57,6 +57,8 @@ VSCodeでテストコードを開くと Run というボタンが表示される
 ## 参考
 ![image](https://github.com/user-attachments/assets/8fcac2e0-8159-415c-a42b-6aef9b01cb82)
 
-![FireShot Capture 041 - ハンズオン会 2025_04_25 テスト駆動開発 - docodoor -  scrapbox io](https://github.com/user-attachments/assets/67ae5cf0-33e9-4e3c-bd94-ef0d589e3753)
+
+![CleanShot 2025-04-25 at 17 38 30@2x](https://github.com/user-attachments/assets/5e3331af-a2af-41af-929c-7fce024aaa46)
+
 
 
